@@ -1,0 +1,30 @@
+<div class="home-main">
+  <div class="search">
+    <div class="search-head">Search for a flight</div>
+    <div class="search_input">
+      <form class="target">
+        <div class="form1 departure">
+          <label for="departure">Departure</label><br />
+          <select type="text" id="departure" name="departure">
+            <option value="Cracow">Cracow</option>
+          </select>
+        </div>
+        <div class="form1 arrive">
+          <label for="arrive">Arrive</label><br />
+          <select type="text" id="arrive" name="arrive">
+            <option value="Warsaw">Warsaw</option>
+            <option value="Rome">Rome</option>
+            <option value="NewYork">New York</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="date">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

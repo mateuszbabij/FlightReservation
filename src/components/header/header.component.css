@@ -1,0 +1,53 @@
+.header{
+    background-color: gray;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 70;
+    justify-content: flex-start;
+
+    overflow: auto;
+
+}
+
+
+
+.logoimg{
+    margin: auto;
+    height: 70px;
+    width: auto;
+    float: left;
+}
+
+.time{
+width: 25%;
+}
+.hour{
+    margin: auto;
+    text-align: center;
+}
+
+.weather{
+width: 25%;
+}
+
+.temp{
+      margin: auto;
+    text-align: center;  
+}
+
+.btn-header{
+float: right;
+width: 25%;
+
+}
+
+.btn1{
+    float: right;
+    margin: 1rem;
+
+}
+
+.btn1:hover{
+    background-color: red;
+}
