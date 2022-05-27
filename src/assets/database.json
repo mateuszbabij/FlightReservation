@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 11,
+      "nick": "mat94",
+      "password": "1234567",
+      "name": "Mateusz",
+      "surname": "Babij",
+      "age": 28,
+      "mail": "babijmateusz94@gmail.com",
+      "city": "Krakow"
+    }
+  ],
+  "travel": [
+    {
+      "id": 21,
+      "short": "KRK-WAW",
+      "dist": 252,
+      "time": 60,
+      "departure": "Cracow",
+      "arrival": "Warsaw",
+      "price": 200,
+      "plane": "Embraer"
+    },
+    {
+      "id": 22,
+      "short": "KRK-ROM",
+      "dist": 1077,
+      "time": 140,
+      "departure": "Cracow",
+      "arrival": "Rome",
+      "price": 500,
+      "plane": "Boeing 737"
+    },
+    {
+      "id": 23,
+      "short": "KRK-NY",
+      "dist": 6922,
+      "time": 549,
+      "departure": "Cracow",
+      "arrival": "New York",
+      "price": 1500,
+      "plane": "Dreamliner 787"
+    }
+  ]
+}

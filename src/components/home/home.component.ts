@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Data1Service } from 'src/services/data1.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(private data1Service: Data1Service) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.data1Service.getJSON().subscribe((data) => {
+      console.log(data.travel);
+    });
+  }
 }
