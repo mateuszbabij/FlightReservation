@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Data1Service } from 'src/services/data1.service';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+  weathers: any;
+  // locationService: any;
+  constructor(private api: Data1Service) {}
+  today = new Date();
+  ngOnInit(): void {
+    this.api.sendGetRequest().subscribe((Data) => {
+      this.weathers = Data;
+      console.log(Data);
+    });
+  }
 }

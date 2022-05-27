@@ -18,6 +18,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { FilterPipe } from 'src/pipes/uniquePipe';
+import { tempConverterPipe } from 'src/pipes/temp-convertor.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FilterPipe } from 'src/pipes/uniquePipe';
     HomeComponent,
     FooterComponent,
     FilterPipe,
+    tempConverterPipe,
   ],
   imports: [
     BrowserModule,

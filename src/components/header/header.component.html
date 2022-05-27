@@ -3,10 +3,14 @@
     <img class="logoimg" routerLink="/" src="../../assets/images/plane.svg" alt="">
     </div>
     <div class="time">
-<div class="hour">20:20</div>
+<div class="hour">{{today | date:'short'}}</div>
     </div>
     <div class="weather">
-        <div class="temp">Słoneczko</div>
+        <div class="temp">
+            <p>{{weathers?.name}}</p>
+            <p>{{weathers?.main.temp | tempConverter:'C'}} &deg;C</p>
+            <p>{{weathers?.weather[0].description}}</p>
+        </div>
 
     </div>
     <div class="btn-header">
