@@ -1,17 +1,16 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+// import { HttpClient, HttpResponse } from '@angular/common/http';
+// import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
-})
-export class Data1Service {
-  constructor(private http: HttpClient) {
-    this.getJSON().subscribe((data) => {
-      console.log(data);
-    });
-  }
-  public getJSON(): Observable<any> {
-    return this.http.get('../assets/database.json');
-  }
-}
+
+// @Injectable()
+  
+// export class Data1Service {
+//   public data: any = [];
+//   constructor(private http: HttpClient) {}
+  
+//   getTravels() {
+//     this.http.get('../assets/database.json').subscribe(response: HttpResponse)=> {
+      
+//     }
+//   }
+// }

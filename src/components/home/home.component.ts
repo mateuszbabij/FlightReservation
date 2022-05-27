@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Data1Service } from 'src/services/data1.service';
+import { ITravel } from 'src/interfaces/travelInterface';
+import DataJson from '../../assets/database.json';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,10 @@ import { Data1Service } from 'src/services/data1.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private data1Service: Data1Service) {}
+  Travels = DataJson.travel;
+  constructor() {}
 
   ngOnInit(): void {
-    this.data1Service.getJSON().subscribe((data) => {
-      console.log(data.travel);
-    });
+    console.log(this.Travels);
   }
 }

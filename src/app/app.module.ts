@@ -17,9 +17,16 @@ import { FooterComponent } from '../components/footer/footer.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
+import { FilterPipe } from 'src/pipes/uniquePipe';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    FooterComponent,
+    FilterPipe,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

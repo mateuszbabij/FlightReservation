@@ -6,15 +6,13 @@
         <div class="form1 departure">
           <label for="departure">Departure</label><br />
           <select type="text" id="departure" name="departure">
-            <option value="Cracow">Cracow</option>
+            <option *ngFor="let travel of Travels | unique:'departure'" value="{{travel.id}}}">{{travel.departure}}</option>
           </select>
         </div>
         <div class="form1 arrive">
           <label for="arrive">Arrive</label><br />
           <select type="text" id="arrive" name="arrive">
-            <option value="Warsaw">Warsaw</option>
-            <option value="Rome">Rome</option>
-            <option value="NewYork">New York</option>
+            <option *ngFor="let travel of Travels | unique:'arrival'" value="{{travel.id}}}">{{travel.arrival}}</option>
           </select>
         </div>
       </form>
